@@ -14,15 +14,15 @@
          <img src="./images/logo.png" alt="LOGO">
         </div>
         <div class="rightnav">
-        <nav>
-            <ul>
-                <li><a href="#phone">Phone</a></li>
-                <li><a href="#airpods">Airpods</a></li>
-                <li><a href="#watch">Watch</a></li>
-                <li><a href="#mac">Mac</a></li>
+        <nav >
+            <ul id="nav">
+                <li><a href="#0" id="p">Phone</a></li>
+                <li><a href="#1">Airpods</a></li>
+                <li><a href="#2">Watch</a></li>
+                <li><a href="#3">Mac</a></li>
             </ul>
         </nav>
-        <img src="./images/menu.png" alt="menu">
+        <img src="./images/menu.png" alt="menu" onclick="toggle()">
      </div>
      </div>
     <div class="container">
@@ -45,6 +45,7 @@
 
      <!-- Navigation ended -->
 <div class="mrow">
+    <hr id="0" >
      <div class="row" id="phone">
          <div class="col1">
              <h3>IPhone X</h3>
@@ -61,7 +62,7 @@
               <div class="box">$1500</div>
          </div>
 </div>
-<hr>
+<hr id="1">
 <div class="row" id = "airpods">
          <div class="col1">
             <h3>IPhone X</h3>
@@ -78,7 +79,7 @@
              <div class="box">$300</div>
         </div>
 </div>
- <hr>
+ <hr id="2">
 <div class="row" id = "watch">
          <div class="col1">
             <h3>IPhone X</h3>
@@ -95,7 +96,7 @@
              <div class="box">$500</div>
         </div>
 </div>
-<hr>
+<hr id="3">
 <div class="row" id="mac">
     <div class="col1">
        <h3>IPhone X</h3>
@@ -129,5 +130,17 @@
 
 
     <script type="text/javascript" src="tilt.js"></script>
+    <script type="text/javascript" src="toggle.js"></script>
+    <script>
+        var menu = document.getElementById("nav");
+menu.style.maxHeight="0px";
+function toggle(){
+    if(menu.style.maxHeight=="0px"){
+        menu.style.maxHeight="150px";
+    }else{
+        menu.style.maxHeight="0px";
+    }
+}
+    </script>
 </body>
 </html>
