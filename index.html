@@ -5,30 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Applestore</title>
 </head>
 <body>
-    <div class="container">
-     <div class="navigation">
+    <div class="navigation">
         <div class="logo">
          <img src="./images/logo.png" alt="LOGO">
         </div>
         <div class="rightnav">
         <nav>
             <ul>
-                <li><a href="">Phone</a></li>
-                <li><a href="">Airpods</a></li>
-                <li><a href="">Watch</a></li>
-                <li><a href="">Mac</a></li>
+                <li><a href="#phone">Phone</a></li>
+                <li><a href="#airpods">Airpods</a></li>
+                <li><a href="#watch">Watch</a></li>
+                <li><a href="#mac">Mac</a></li>
             </ul>
         </nav>
         <img src="./images/menu.png" alt="menu">
      </div>
      </div>
+    <div class="container">
+     <!-- <div class="navigation">
+        <div class="logo">
+         <img src="./images/logo.png" alt="LOGO">
+        </div>
+        <div class="rightnav">
+        <nav>
+            <ul>
+                <li><a href="#phone">Phone</a></li>
+                <li><a href="#airpods">Airpods</a></li>
+                <li><a href="#watch">Watch</a></li>
+                <li><a href="#mac">Mac</a></li>
+            </ul>
+        </nav>
+        <img src="./images/menu.png" alt="menu">
+     </div>
+     </div> -->
 
      <!-- Navigation ended -->
-
-     <div class="row">
+<div class="mrow">
+     <div class="row" id="phone">
          <div class="col1">
              <h3>IPhone X</h3>
              <h4>Display:5.8"</h4>
@@ -40,16 +57,77 @@
               <button>Buy Now <img src="./images/Buy.png" alt=""> </button>
             </div>
          <div class="col2">
-              <img src="./images/iphone.webp" alt="" class="phone">
-              <div class="box"></div>
+              <img src="./images/iphone.webp" alt="" class="phone" data-tilt>
+              <div class="box">$1500</div>
          </div>
-     </div>
+</div>
+<hr>
+<div class="row" id = "airpods">
+         <div class="col1">
+            <h3>IPhone X</h3>
+            <h4>Display:5.8"</h4>
+            <h5>1125x2436 pixels</h5>
+            <h4>Camera:12MP</h4>
+            <h5>2160p</h5>
+            <h4>RAM:3GB</h4>
+            <h5>Apple A11 Bionic</h5>
+             <button>Buy Now <img src="./images/Buy.png" alt=""> </button>
+           </div>
+        <div class="col2 ani">
+             <img src="./images/airpods2.png" alt="" class="pods" data-tilt>
+             <div class="box">$300</div>
+        </div>
+</div>
+ <hr>
+<div class="row" id = "watch">
+         <div class="col1">
+            <h3>IPhone X</h3>
+            <h4>Display:5.8"</h4>
+            <h5>1125x2436 pixels</h5>
+            <h4>Camera:12MP</h4>
+            <h5>2160p</h5>
+            <h4>RAM:3GB</h4>
+            <h5>Apple A11 Bionic</h5>
+             <button>Buy Now <img src="./images/Buy.png" alt=""> </button>
+           </div>
+        <div class="col2 ani2">
+             <img src="./images/watch.png" alt="" class="Watch" data-tilt >
+             <div class="box">$500</div>
+        </div>
+</div>
+<hr>
+<div class="row" id="mac">
+    <div class="col1">
+       <h3>IPhone X</h3>
+       <h4>Display:5.8"</h4>
+       <h5>1125x2436 pixels</h5>
+       <h4>Camera:12MP</h4>
+       <h5>2160p</h5>
+       <h4>RAM:3GB</h4>
+       <h5>Apple A11 Bionic</h5>
+        <button>Buy Now <img src="./images/Buy.png" alt=""> </button>
+      </div>
+   <div class="col2 ani3">
+        <img src="./images/mac.png" alt="" class="mac" data-tilt>
+        <div class="box">$2200</div>
+   </div>
+</div>
+<hr>
 
 
+</div>
+
+<footer>
+    <div class="foot">
+        <i class="fa fa-github"><a href="github"></a></i>
+        <i class="fa fa-linkedin"><a href="linkedin"></a></i>
+        <i class="fa fa-facebook"><a href="leetcode"></a></i>
+    </div>
+</footer>
 
     </div>
 
 
-
+    <script type="text/javascript" src="tilt.js"></script>
 </body>
 </html>

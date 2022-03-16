@@ -3,6 +3,7 @@
     margin:0;
     box-sizing: border-box;
     background-color: #ecf0f1;
+    scroll-behavior: smooth;
 }
 .container{
     width: 100%;
@@ -21,8 +22,15 @@
     padding: 10px 1%;
     display: flex;
     justify-content: space-between;
-    width:98%;
+    width:100%;
     align-items: center;
+    position: sticky;
+    top:0;
+    padding-left: 8%;
+    padding-right:8%;
+    border: 2px solid black;
+    box-sizing: border-box;
+    background-color: #ef5777;
 }
 .rightnav{
     width:50%;
@@ -54,10 +62,14 @@ nav>ul{
     font-size: x-large;
 }
 .row{
-    margin: 75px 0 0 0 ;
+    margin: 75px 0 55px 0 ;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.mrow{
+    display: flex;
+    flex-direction: column;
 }
 .col1{
   flex-basis: 50%;
@@ -132,20 +144,49 @@ button:hover img{
     flex-basis: 50%;
     display: flex;
     align-items: center;
+    margin-bottom: 30px;
+    transform: perspective(1000px);
 
 }
 .phone{
     width: 75%;
+    transform: translateZ(20px);
+}
+.pods{
+    width:30%;
+    margin-left: 20%;
+    transform: translateZ(20px);
+}
+.Watch{
+    transform: translateZ(20px);
+    width: 70%;
+    margin-left: 10%;
+}
+.mac{
+    transform: translateZ(20px);
+    width: 90%;
+    margin-left: -10%;
+}
+.ani>.box{
+    animation-delay: 2s;
+}
+.ani2>.box{
+    animation-delay: 3s;
+}
+
+.ani3>.box{
+    animation-delay: 4s;
 }
 
 
 .box{
     animation-name: fall;
-    animation-duration: 4s;
+    animation-duration: 5s;
     animation-iteration-count: infinite;
-    animation-direction: alternate;
+    animation-direction: alternate; 
     animation-timing-function: linear;
     position: absolute;
+    animation-delay: 1s;
     right:0;
     top: 0;
     /* background:linear-gradient(#ef5777,#ff3f34); */
@@ -154,6 +195,12 @@ button:hover img{
     height: 15vh;
     width: 15vh;  
      box-shadow: 0px 2px 0px 0px rgba(97, 92, 92,.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: x-large;
+    font-weight: 600;
+    color:#2c3e50;
 } 
 
 @keyframes fall{
@@ -161,6 +208,53 @@ button:hover img{
         top:0px;
     }
     100%{
-        top:250px;
+        top:200px;
     }
+  }
+
+footer{
+   height:15vh;
+   margin: 15px 0;
+}
+.foot{
+    min-height: 12vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.foot>i{
+    margin: 0px 20px;
+    font-size: xx-large;
+    color: #2c3e50;
+    transition: 1.5s ease-out;
+}
+.foot>i:hover{
+    transform: scale(1.2) rotate(360deg);
+}
+
+@media screen and (max-width: 700px) {
+   .row{
+       flex-direction: column;
+       justify-content: space-evenly;
+       margin: 75px 0 55px 0 ;
+   }
+   .box{
+       display: none;
+   }
+   .phone{
+       width: 100%;
+   }
+   .pods{
+       width: 60%;
+   }
+
+   .Watch{
+       width:80%;
+   }
+  .mac{
+      width: 100%;
+  }
+  .col2{
+      margin-top: 20px;
+  }
   }
