@@ -31,6 +31,7 @@
     padding-left: 8%;
     padding-right:8%;
     box-sizing: border-box;
+    border-bottom:2px solid #ecf0f1;
     /* background-color: #ef5777; */
 }
 hr{
@@ -62,7 +63,6 @@ nav>ul{
      text-transform: uppercase;
      transition: 0.5s;
      background: transparent;
-     text-shadow: 0px 1px 1px #34495e;
  }
  nav>ul>li>a:hover{
     color:#2c3e50;
@@ -279,7 +279,7 @@ footer{
   }
   #nav{
       overflow: hidden;
-    background:linear-gradient(#ef5777,#ff3f34);
+    background:linear-gradient(to right,#ef5777,#ff3f34);
   }
   .row{
       margin-top: 220px;
